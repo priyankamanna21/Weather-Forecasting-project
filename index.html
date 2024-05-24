@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Weather</title>
+</head>
+<body>
+  <div class="wrapper-bg">
+  <div class="container-fluid">
+    <section class="container">
+      <section class="inputs">
+        <input type="text" placeholder="Enter any city..." class="cityinput">
+        <button class="fa-solid fa-magnifying-glass" id="add"></button>
+      </section>
+
+      <section class="display">
+        <div class="wrapper">
+          <h2 id="cityoutput"></h2>
+          <div class="date-container">
+          <div>Current weather</div>  
+          <div class="time" id="time">
+            <span id="am-pm"> </span></div>
+          <div>
+          <div class="currentweather">
+          <div class="weather-icon">
+            <div class="image">
+              <img src="https://openweathermap.org/img/wn/10d@2x.png">
+            </div>
+            <div>
+            <p class="temperature" > <sup></sup> </p>
+            </div>
+          
+          </div>
+          <div class="def">
+            <p class="description"></p>
+          </div> 
+          <div class="others" id="current-weather-items">
+            <div class="weather-item">
+              <div>Humidity <i class="fa-solid fa-droplet"></i></div>
+              <div class="humidity"></div>
+            </div>
+            <div class="weather-item">
+              <div title="Pressure is the weight of the air in the atmosphere.It is normalized to the standard atmospheric pressure of 1,013.25 mb (29.912 in Hg).Higher pressure is usually associated with sunny weather,lower opressure with stormy"  >Pressure <i class="fa-solid fa-gauge"></i></div>
+              <div class="pressure"></div>
+            </div>
+            <div class="weather-item">
+              <div>Wind Speed <i class="fa-solid fa-wind"></i></div>
+              <div class="wind-speed"></div>
+            </div>
+          </div>
+          <div>
+        </div>
+      </section>
+    </section>
+    <div class="future-forecast">
+    <div class="weather-forecast" id="weather-forecast">
+      <!-- <div class="weather-forecast-item">
+        <div class="day">Tue</div>
+        <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+        <div class="temp">Night - 25.6&#176; C</div>
+        <div class="temp">Day - 35.6&#176; C</div>
+      </div>
+      <div class="weather-forecast-item">
+        <div class="day">Wed</div>
+        <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+        <div class="temp">Night - 25.6&#176; C</div>
+        <div class="temp">Day - 35.6&#176; C</div>
+      </div>
+      <div class="weather-forecast-item">
+        <div class="day">Thur</div>
+        <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+        <div class="temp">Night - 25.6&#176; C</div>
+        <div class="temp">Day - 35.6&#176; C</div>
+      </div>
+      <div class="weather-forecast-item">
+        <div class="day">Fri</div>
+        <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+        <div class="temp">Night - 25.6&#176; C</div>
+        <div class="temp">Day - 35.6&#176; C</div>
+      </div>
+      <div class="weather-forecast-item">
+        <div class="day">Sat</div>
+        <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+        <div class="temp">Night - 25.6&#176; C</div>
+        <div class="temp">Day - 35.6&#176; C</div>
+      </div>
+      <div class="weather-forecast-item">
+        <div class="day">Sun</div>
+        <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+        <div class="temp">Night - 25.6&#176; C</div>
+        <div class="temp">Day - 35.6&#176; C</div>
+      </div>  -->
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/22d0d63377.js" crossorigin="anonymous"></script>
+<div>
+</body> 
+</html>
